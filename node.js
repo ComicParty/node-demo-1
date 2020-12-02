@@ -37,9 +37,9 @@ var server = http.createServer(function(request, response){
     response.write(`你输入的路径不存在对应的内容`)
     response.end()
     
- http://localhost:8888 得到一个 HTML 页面，页面里面有一个 h1 标签，并且页面会请求一个 style.css
+ /* http://localhost:8888 得到一个 HTML 页面，页面里面有一个 h1 标签，并且页面会请求一个 style.css
 style.css 内容为 h1{color: red}
-访问其他未知路径一律提示「你访问的页面不存在」，并且状态码为 404
+访问其他未知路径一律提示「你访问的页面不存在」，并且状态码为 404 */
   }
 
   /******** 代码结束，下面不要看 ************/
