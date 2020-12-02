@@ -24,12 +24,12 @@ var server = http.createServer(function(request, response){
   if(path === '/'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response.write(`<html doctype><head><link href="./css"></head><h1>h1</h1><body></body></html>`)
+    response.write(`<!DOCTYPE html><html><head><link rel="stylesheet" type="text/css" href="./xcss"></head><h1>绿</h1><body></body></html>`)
     response.end()
-  } else if(path === '/x'){
+  } else if(path === '/xcss'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
-    response.write(`body{color: red;}`)
+    response.write(`h1{color: red;}`)
     response.end()
   } else {
     response.statusCode = 404
